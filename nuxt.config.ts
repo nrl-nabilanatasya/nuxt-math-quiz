@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     // @ts-ignore
   },
 
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt'],
 
   app: {
     head: {
