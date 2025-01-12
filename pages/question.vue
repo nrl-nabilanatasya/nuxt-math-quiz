@@ -8,7 +8,7 @@ const router = useRouter()
 const currentQuestionIndex = ref(0)
 
 const currentQuestion = computed(() => quizStore.questions[currentQuestionIndex.value])
-const selectedOption = ref(quizStore.selectedAnswers[currentQuestion.value.id][0] || '')
+const selectedOption = ref(quizStore.selectedAnswers[currentQuestion.value.id] || '')
 
 console.log(currentQuestion.value.id)
 console.log(selectedOption.value)
