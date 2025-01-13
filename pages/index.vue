@@ -24,7 +24,7 @@ function proceedToQuestions() {
     const page = document.querySelector('.page')
     page!.classList.add('animate-slideLeft')
     setTimeout(() => {
-        router.push('/question')
+        router.push('/1')
     }, 1000) // Match the duration of the slideLeft animation
 }
 

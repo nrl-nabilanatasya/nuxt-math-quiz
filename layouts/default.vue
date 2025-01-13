@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const config = useRuntimeConfig()
 </script>
 <template>
     <NuxtRouteAnnouncer />
@@ -9,7 +10,7 @@
             <NuxtPage />
         </div>
         <div class="absolute bottom-4 w-full text-center text-white opacity-30">
-            &copy; Copyright : www.mathinenglish.com.
+            &copy; {{ config.public.metaCopyright }}
         </div>
     </div>
 </template>

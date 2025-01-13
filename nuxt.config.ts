@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-01-12',
 
   devtools: { enabled: true },
-  
+
   ssr: false,
 
   // css: ["@/assets/style.scss", "@/assets/media.scss"], // vuetify ships precompiled css, no need to import sass
@@ -38,6 +38,12 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       }
+    },
+  },
+
+  runtimeConfig: {
+    public: {
+      metaCopyright: process.env.META_COPYRIGTH,
     },
   },
 })
